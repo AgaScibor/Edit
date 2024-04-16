@@ -18,9 +18,9 @@ public:
         Yellow,
         White
     };
-
+    // Konstruktor domyślny
     Edit();
-
+    // Konstruktor kopiujący
     Edit(const Edit& other);
 
     void setPosition(int x, int y);
@@ -40,12 +40,12 @@ public:
     void display();
 
 private:
-    int positionX;
-    int positionY;
-    int length;
-    std::string text;
-    Color textColor;
-    Color backgroundColor;
+    int positionX;    // Pozycja X pola tekstowego
+    int positionY;    // Pozycja Y pola tekstowego
+    int length;        // Długość pola tekstowego
+    std::string text;     // Tekst pola tekstowego
+    Color textColor;    // Kolor tekstu
+    Color backgroundColor;    // Kolor tła
 
     static void setCursorPosition(int x, int y);
 
